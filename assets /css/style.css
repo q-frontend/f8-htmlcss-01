@@ -43,9 +43,23 @@ a {
     overflow: hidden;
 }
 /* header */
-.header {position: relative;
+.fix-header {
+    background: #E6F0FF; 
+    padding-top: 26px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+ .fix-header  .navbar {
+    padding: 12px 0;
+   
+}
+.hero-row {
+    display: flex;
+    position: relative;
     height: 100vh;
     background: #E6F0FF;
+
 }
 .navbar {
     display: flex;
@@ -527,4 +541,7 @@ footer .body {
 .footer .row-bottom {display: flex;
     justify-content: space-between;
     margin-top: 81px;
+}
+.footer .social .image {
+    margin-right: 16px;
 }
